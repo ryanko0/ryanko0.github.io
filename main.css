@@ -1,0 +1,38 @@
+#vis-container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    /*grid-template-areas:
+        "map snapshot"
+        "map detail";*/
+    grid-template-columns: 2fr 3fr;
+}
+
+#map {
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    z-index: 0;
+}
+
+#detail-container {
+    display: grid;
+}
+
+#snapshot {
+    width: 100%;
+    padding: 10px;
+}
+
+#detail {
+    width: 100%;
+}
+
+.clickable {
+    background-color: #eee;
+    cursor: pointer;
+}
+.clickable:hover {
+    color: blue;
+    font-weight: bold;
+}
